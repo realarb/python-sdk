@@ -125,8 +125,6 @@ class RestClientApi(object):
             path_params['resource'] = local_var_params['resource']  # noqa: E501
 
         query_params = []
-        if 'access_token' in local_var_params and local_var_params['access_token'] is not None:  # noqa: E501
-            query_params.append(('access_token', local_var_params['access_token']))  # noqa: E501
 
         header_params = {}
 
@@ -137,6 +135,10 @@ class RestClientApi(object):
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
+
+        # HTTP header 'Authorization'
+        if 'access_token' in local_var_params and local_var_params['access_token'] is not None:  # noqa: E501
+            header_params["Authorization"] = self.api_client.get_header_authorization(local_var_params['access_token'])
 
         # Authentication setting
         auth_settings = []  # noqa: E501
@@ -246,8 +248,6 @@ class RestClientApi(object):
             path_params['resource'] = local_var_params['resource']  # noqa: E501
 
         query_params = []
-        if 'access_token' in local_var_params and local_var_params['access_token'] is not None:  # noqa: E501
-            query_params.append(('access_token', local_var_params['access_token']))  # noqa: E501
 
         header_params = {}
 
@@ -258,6 +258,10 @@ class RestClientApi(object):
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
+
+        # HTTP header 'Authorization'
+        if 'access_token' in local_var_params and local_var_params['access_token'] is not None:  # noqa: E501
+            header_params["Authorization"] = self.api_client.get_header_authorization(local_var_params['access_token'])
 
         # Authentication setting
         auth_settings = []  # noqa: E501
@@ -374,8 +378,6 @@ class RestClientApi(object):
             path_params['resource'] = local_var_params['resource']  # noqa: E501
 
         query_params = []
-        if 'access_token' in local_var_params and local_var_params['access_token'] is not None:  # noqa: E501
-            query_params.append(('access_token', local_var_params['access_token']))  # noqa: E501
 
         header_params = {}
 
@@ -392,6 +394,10 @@ class RestClientApi(object):
         # HTTP header `Content-Type`
         header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
             ['application/json'])  # noqa: E501
+
+        # HTTP header 'Authorization'
+        if 'access_token' in local_var_params and local_var_params['access_token'] is not None:  # noqa: E501
+            header_params["Authorization"] = self.api_client.get_header_authorization(local_var_params['access_token'])
 
         # Authentication setting
         auth_settings = []  # noqa: E501
@@ -508,8 +514,6 @@ class RestClientApi(object):
             path_params['resource'] = local_var_params['resource']  # noqa: E501
 
         query_params = []
-        if 'access_token' in local_var_params and local_var_params['access_token'] is not None:  # noqa: E501
-            query_params.append(('access_token', local_var_params['access_token']))  # noqa: E501
 
         header_params = {}
 
@@ -526,6 +530,10 @@ class RestClientApi(object):
         # HTTP header `Content-Type`
         header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
             ['application/json'])  # noqa: E501
+
+        # HTTP header 'Authorization'
+        if 'access_token' in local_var_params and local_var_params['access_token'] is not None:  # noqa: E501
+            header_params["Authorization"] = self.api_client.get_header_authorization(local_var_params['access_token'])
 
         # Authentication setting
         auth_settings = []  # noqa: E501
